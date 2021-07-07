@@ -64,6 +64,39 @@ int i,j=0;                                      //indices de los ciclos
           Serial.println("");
     break;
 
+    case 2: 
+          Serial.println("");                         //Separa la suma del menú
+          Serial.println("Resta");
+         Serial.print("Ingrese el primer Numero: ");
+          
+          while(i!=2){                                  //ciclo para agregar el primer número
+             if (Serial.available() > 0) {  
+               a =Serial.parseInt();
+             if(a>0){
+                Serial.println(a);
+                i=2;              
+             }
+             }
+            }
+            
+          Serial.print("Ingrese el segundo Numero: ");
+          while(i!=1){                                    //ciclo para agregar el segundo número
+             if (Serial.available() > 0) {
+            b =Serial.parseInt();
+             if(b>0){              
+              Serial.println(b);
+              i=1;  
+             }
+             }
+          }
+
+          Serial.print("Resultado: ");
+          Serial.println(Resta(a,b));
+          j=1;                                              //se reinicia la variable h para volver a mostrar el menú
+          ind=0;                                         //se Reinicia indice del switch
+          Serial.println("");
+    break;
+
 //......................................................................
 
 //agregar aquí los siguientes cases
