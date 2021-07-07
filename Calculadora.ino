@@ -1,5 +1,6 @@
 #include <SoftwareSerial.h>
 #include "Suma.h"                             //Librería suma creada por David
+#include "Resta.h"
 //.........................................................
 
 //Agregar aquí las librerias
